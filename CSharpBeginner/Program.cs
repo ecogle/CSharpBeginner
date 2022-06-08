@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpBeginner
 {
@@ -17,7 +18,12 @@ namespace CSharpBeginner
             Console.WriteLine(string.Format("This is a test with string.Format for {0}",name));
 
             ArrayDemo.testArray();
-            
+            ListClass.testList();
+            name = null;
+            var temp = name ?? "Bob";
+            Console.WriteLine(temp);
+
+            Console.WriteLine(GenericsTest.AreEqual(3,3));
         }
     }
 }
