@@ -16,7 +16,8 @@ namespace CSharpBeginner
             //Using the string format
             Console.WriteLine(string.Format("This is a test with string.Format for {0}",name));
 
-
+            ArrayDemo.testArray();
+            
         }
     }
 }
